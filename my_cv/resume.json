@@ -1,0 +1,211 @@
+{
+  "meta": { "theme": "kendall" },
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Lee Oades",
+    "label": "Software Consultancy and Development // Lee Oades Consulting Ltd",
+    "image": "https://avatars2.githubusercontent.com/u/2321091?s=800",    
+    "email": "lee.oades@gmail.com",
+    "phone":"+44 (0)7946 233 130",
+    "url": "https://leeoades.github.io/",
+    "summary": "<p>Versatile, experienced developer and problem solver. Reliable, self-motivated, professional and positive can-do attitude, friendly bloke.</p><p>Contracting since 2008, previous clients range from large financial corporations, to the games industry, charities and start-ups.</p><p>Embracing the latest technologies and serverless architectures. Continuously learning and improving.</p><p>Passionate about producing beautiful, well-tested, maintainable software, using best practices, industry standard design patterns and practices, improving user experiences, eliminating manual processes and improving staff efficiency, using an Agile and iterative approach.</p><p>Strong team player, providing technical leadership, guidance and mentoring to colleagues. </p><p>Excellent client facing and communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with creative and systematic approach and excellent problem-solving abilities. </p>",
+    "location": {
+      "city": "Marlborough",
+      "region":"Wiltshire",
+      "countryCode": "UK"
+    },
+    "profiles": [
+      {
+        "url": "https://www.linkedin.com/in/leeoades/",
+        "username": "leeoades",
+        "network": "linkedin"
+      },
+      {
+        "url": "https://github.com/leeoades",
+        "username": "leeoades",
+        "network": "github"
+      },
+      {
+        "url": "https://stackoverflow.com/users/20508/lee-oades",
+        "username": "lee-oades",
+        "network": "stackoverflow"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "The University of Southampton",
+      "url":"https://www.southampton.ac.uk/",
+      "area": "Mathematics with Computer Science",
+      "studyType": "Bachelor of Science",
+      "score": "1st class with honours",
+      "startDate": "1993-09-01",
+      "endDate": "1996-07-01"
+    }
+  ],
+  "references": [
+    {
+      "reference": "<p>I've had the pleasure of working with Lee on a couple of occasions in the past decade, both long term consultant hires, and cannot recommend highly enough his skills and the way that he delivers them into teams and projects.</p><p>When you hire Lee you're hiring much more than a professional, experienced, trusted and battle-hardened software developer.</p><p>As well as the high quality outputs that you'd expect from a consultant developer like Lee, he also adds his abilities to generate, foster and maintain high levels of enthusiasm and collaboration in any team that he joins.</p><p><em>(extract from LinkedIn)</em></p>",
+      "name": "Dale Titcombe, Head of IT, BCS, The Charter Institute for IT",
+      "url":"https://www.linkedin.com/in/dale-titcombe-mbcs-citp-bbaab098/"
+    },
+    {
+      "reference": "<p>I have worked with Lee for many years, crossing several contracts / projects and I cannot rate him highly enough.</p><p>Lee has been instrumental in revolutionising our ways of working and has never let me down when it comes to delivering quality product. He's also completely autonomous and finds ways of filling gaps even between tasks.</p><em>(extract from LinkedIn)</em></p>",
+      "name": "Ken Maes, Application Development Manager, BCS, The Charter Institute for IT",
+      "url":"https://www.linkedin.com/in/ken-maes-7511a011/"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": ["C# v8", "ASP.NET Core 3.1", "Entity Framework to SQL Server", "RESTful APIs", "Swagger"],
+      "level": "Advanced",
+      "name": "Backend"
+    },
+    {
+      "keywords": ["AWS", "Lambda", "Step Functions", "SNS", "SQS", "DynamoDB", "API Gateway", "EC2", "S3"],
+      "level": "Advanced",
+      "name": "Cloud"
+    },
+    {
+      "keywords": ["Team City / Jenkins", "ELK / Kibana", "Octopus", "GIT", "Nuget"],
+      "level": "Advanced",
+      "name": "Dev Ops"
+    },
+    {
+      "keywords": [
+        "ASP.NET MVC / Razor",
+        "HTML",
+        "CSS / SASS / LESS / SCSS",
+        "Javascript / Typescript",
+        "Knockout JS",
+        "Bootstrap"
+      ],
+      "level": "Intermediate",
+      "name": "Frontend"
+    }
+  ],
+  "work": [
+    {
+      "name": "BCS",
+      "description":"The Chartered Institute for IT",
+      "url": "https://www.bcs.org/",
+      "location": "Swindon",
+      "position": "Senior Software Developer",
+      "startDate": "2019-09-01",
+      "endDate": "2020-08-31",
+      "highlights": [
+        "Candidate registration system : Multiple independent, asynchronous .NET Core microservices, APIs, ASP.NET MVC websites and a Blazor client app deployed to AWS.",
+        "Distributed, event driven architecture within AWS (SNS, SQS, Lambdas, DynamoDB).",
+        "Cleanly built components utilising Mediatr, built using TDD, XUnit and mock builders.",
+        "Also co-developed .NET Core web application to replace legacy system. Included simple isolated SPAs in Knockout and Typescript, dynamic creation of Excel and Word reports using business supplied templates, sending customised emails."
+      ]
+    },
+    {
+      "name": "Nationwide",
+      "description":"The world's largest building society",
+      "url": "https://www.nationwide.co.uk/",
+      "location": "Swindon",
+      "position": "Senior Software Developer",
+      "startDate": "2018-09-01",
+      "endDate": "2019-08-31",
+      "highlights": [
+        "Developed .NET Core backend services for a new, large and complex distributed system for Mortgage Consultants to process new mortgage applications.",
+        "Hosted in Docker containers using Kubernetes.",
+        "Event driven architecture over Kafka. Storage in MongoDB.",
+        "Integration with many existing legacy services."
+      ]
+    },
+    {
+      "name": "BCS",
+      "description":"The Chartered Institute for IT",
+      "url": "https://www.bcs.org/",
+      "location": "Swindon",
+      "position": "Senior Software Developer",
+      "startDate": "2015-06-01",
+      "endDate": "2018-08-31",
+      "highlights": [
+        "Built .NET Core ASP MVC url for exam invigilators - Knockout, Bootstrap, OAuth, SQL DB, deployed to Amazon AWS EC2",
+        "Developed .NET image processing algorithms for detecting answer from a photo of an exam paper, eliminating lighting abnormalities / shadows and determining which circles were coloured in. High profile project request from CEO, concept to delivery in 3 months.",
+        "Significantly improved customer experiences and replaced several tedious, internal, manual processes through automation. Used AWS Lambdas and Step Functions to integrate internal systems with 3rd party vendors, Salesforce APIs.",
+        "Implemented a complete workflow for Salesforce development team – introduced source control, continuous integration, automated deployments, environment specific configuration. Provided training, documentation and support."
+      ]
+    },
+    {
+      "name": "Royal Bank of Canada - Capital Markets",
+      "description":"",
+      "url": "https://www.rbc.com/",
+      "location": "London",
+      "position": "Analyst Developer",
+      "startDate": "2013-07-01",
+      "endDate": "2015-04-30",
+      "highlights": [
+        "Front Office FX application provides live + historical data for quote and deal blotters, dealer intervention, position display.",
+        "WPF application.",
+        "Low latency streaming (RV & Solace into RX)",
+        "High unit test coverage and reduced regression costs through BDDs (nBehave)."
+      ]
+    },
+    {
+      "name": "Royal Bank of Scotland",
+      "description":"",
+      "url": "https://rbs.co.uk",
+      "location": "London",
+      "position": "WPF Developer",
+      "startDate": "2012-09-01",
+      "endDate": "2013-07-31",
+      "highlights": [
+        "Back office P&L / Balance Sheet sign off application.",
+        "Multithreaded WPF application making heavy use of RX for its multithreading, receiving of updates, UI interaction etc.",
+        "Well-architected code and separation of concerns through MVVM, view-model first.",
+        "TDD maintains very high test coverage (+90%)."
+      ]
+    },
+    {
+      "name": "Trayport",
+      "description":"Trayport is the main platform that connects traders, brokers and utilities to the energy market's electronic trading and clearing systems",
+      "url": "https://www.trayport.com/",
+      "location": "London",
+      "position": "Silverlight Developer",
+      "startDate": "2012-01-01",
+      "endDate": "2012-08-31",
+      "highlights": [
+        "Flagship Commodities Trading Platform",
+        "Silverlight v5 multi-window out-of-browser application for traders providing live market prices.",
+        "Written in C# and F#. Created new features within the application as well as maintaining it, refactoring and improving its architecture, stability and performance, plus troubleshooting and fixing issues.",
+        "Autofac, MEF, RX, TDD, Moq, AgUnit, Silverlight Unit Testing Framework, SpecFlow, interop to C++ COM and Win32 components.",
+        "Agile methodologies, pair programming, peer reviews. Provided technical support to team members."
+      ]
+    },
+    {
+      "name": "BNP Paribas",
+      "description":"The largest French banking group and the largest bank in the Eurozone",
+      "url": "https://institutional.bnpparibas-am.com/",
+      "location": "London",
+      "position": "Senior Developer",
+      "startDate": "2010-08-01",
+      "endDate": "2011-12-31",
+      "highlights": [
+        "Developed enhanced WPF application framework including layouts, state persistence, magnetic windows, cross-process communication and eventing, common controls and styling and more",
+        "Live FX Trades blotter WPF windows application that displays live, filterable grids of FX trade data. TOC subscription service, communication using Protobuffers through RV layer, application used RX to throttle incoming data.",
+        "Live FX Position monitor WPF app that displays live FX positions on animated bar charts. Data can be drilled into to display different cuts e.g. by currency pair, client sector, region etc. Windows service uses continuous queries onto Coherence database and MDX queries into OLAP Cube."
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Watching films"
+    },
+    {
+      "name": "Playing acoustic guitar"
+    },
+    {
+      "name": "All things electric cars"
+    },
+    {
+      "name": "Playing poker, preferably winning."
+    },
+    {
+      "name": "Playing football"
+    }
+  ]
+}
