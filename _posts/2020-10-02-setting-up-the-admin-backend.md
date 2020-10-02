@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/posts/code.jpg
 category: jekyll
 summary: Following a guide like a pro
 keywords: "website "
-thumbnail: "-"
+thumbnail: /assets/img/posts/code.jpg
 permalink: jekyll-admin
 ---
 Huge props to [Sujay Kundu](https://sujaykundu.com/), the author of the Jekyll template I've used / mangled to my will. 
