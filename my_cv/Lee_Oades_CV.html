@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of Lee Oades</title>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
+}
+blockquote {
+  font-size: 1em;
+}
+
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
+
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #227c74;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #eee;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+    opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
+
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+    </style>
+    <style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
+
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
+
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.badge {
+  margin: 0;
+}
+
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="https:&#x2F;&#x2F;avatars2.githubusercontent.com&#x2F;u&#x2F;2321091?s&#x3D;800" alt="avatar">
+            </div>
+            <div id="text-header" >
+              <h1>Lee Oades<br><span>Software Consultancy and Development &#x2F;&#x2F; Lee Oades Consulting Ltd</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fas fa-user ico"></i> About</h2>
+            <p><p>Versatile, experienced developer and problem solver. Reliable, self-motivated, professional and positive can-do attitude, friendly bloke.</p><p>Previous clients range from large, financial corporations, to the games industry, charities and start-ups.</p><p>Embracing the latest technologies and serverless architectures. Continuously learning and improving.</p><p>Passionate about producing beautiful, well-tested, maintainable software, using best practices, industry standard design patterns and practices, improving user experiences, eliminating manual processes and improving staff efficiency, using an Agile and iterative approach.</p><p>Strong team player, providing technical leadership, guidance and mentoring to colleagues. </p><p>Excellent client facing and communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with creative and systematic approach and excellent problem-solving abilities. </p></p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      BCS
+                      <div class="pull-right">
+                        Swindon
+                      </div>
+                    </div>
+                    <div class="description">
+                      The Chartered Institute for IT
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.bcs.org&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.bcs.org&#x2F;</a>
+                    </div>
+                    <div class="year">September 2019 – August 2020</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Software Developer</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Candidate registration system : Multiple independent, asynchronous .NET Core microservices, APIs, ASP.NET MVC websites and a Blazor client app deployed to AWS.</li>
+                        <li class="list-group-item">Distributed, event driven architecture within AWS (SNS, SQS, Lambdas, DynamoDB).</li>
+                        <li class="list-group-item">Cleanly built components utilising Mediatr, built using TDD, XUnit and mock builders.</li>
+                        <li class="list-group-item">Also co-developed .NET Core web application to replace legacy system. Included simple isolated SPAs in Knockout and Typescript, dynamic creation of Excel and Word reports using business supplied templates, sending customised emails.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Nationwide
+                      <div class="pull-right">
+                        Swindon
+                      </div>
+                    </div>
+                    <div class="description">
+                      The world&#39;s largest building society
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.nationwide.co.uk&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.nationwide.co.uk&#x2F;</a>
+                    </div>
+                    <div class="year">September 2018 – August 2019</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Software Developer</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Developed .NET Core backend services for a new, large and complex distributed system for Mortgage Consultants to process new mortgage applications.</li>
+                        <li class="list-group-item">Hosted in Docker containers using Kubernetes.</li>
+                        <li class="list-group-item">Event driven architecture over Kafka. Storage in MongoDB.</li>
+                        <li class="list-group-item">Integration with many existing legacy services.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      BCS
+                      <div class="pull-right">
+                        Swindon
+                      </div>
+                    </div>
+                    <div class="description">
+                      The Chartered Institute for IT
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.bcs.org&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.bcs.org&#x2F;</a>
+                    </div>
+                    <div class="year">June 2015 – August 2018</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Software Developer</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Built .NET Core ASP MVC url for exam invigilators - Knockout, Bootstrap, OAuth, SQL DB, deployed to Amazon AWS EC2</li>
+                        <li class="list-group-item">Developed .NET image processing algorithms for detecting answer from a photo of an exam paper, eliminating lighting abnormalities / shadows and determining which circles were coloured in. High profile project request from CEO, concept to delivery in 3 months.</li>
+                        <li class="list-group-item">Significantly improved customer experiences and replaced several tedious, internal, manual processes through automation. Used AWS Lambdas and Step Functions to integrate internal systems with 3rd party vendors, Salesforce APIs.</li>
+                        <li class="list-group-item">Implemented a complete workflow for Salesforce development team – introduced source control, continuous integration, automated deployments, environment specific configuration. Provided training, documentation and support.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Royal Bank of Canada - Capital Markets
+                      <div class="pull-right">
+                        London
+                      </div>
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.rbc.com&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.rbc.com&#x2F;</a>
+                    </div>
+                    <div class="year">July 2013 – April 2015</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Analyst Developer</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Front Office FX application provides live + historical data for quote and deal blotters, dealer intervention, position display.</li>
+                        <li class="list-group-item">WPF application.</li>
+                        <li class="list-group-item">Low latency streaming (RV & Solace into RX)</li>
+                        <li class="list-group-item">High unit test coverage and reduced regression costs through BDDs (nBehave).</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Royal Bank of Scotland
+                      <div class="pull-right">
+                        London
+                      </div>
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;rbs.co.uk" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;rbs.co.uk</a>
+                    </div>
+                    <div class="year">September 2012 – July 2013</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">WPF Developer</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Back office P&L / Balance Sheet sign off application.</li>
+                        <li class="list-group-item">Multithreaded WPF application making heavy use of RX for its multithreading, receiving of updates, UI interaction etc.</li>
+                        <li class="list-group-item">Well-architected code and separation of concerns through MVVM, view-model first.</li>
+                        <li class="list-group-item">TDD maintains very high test coverage (+90%).</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Trayport
+                      <div class="pull-right">
+                        London
+                      </div>
+                    </div>
+                    <div class="description">
+                      Trayport is the main platform that connects traders, brokers and utilities to the energy market&#39;s electronic trading and clearing systems
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.trayport.com&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.trayport.com&#x2F;</a>
+                    </div>
+                    <div class="year">January 2012 – August 2012</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Silverlight Developer</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Flagship Commodities Trading Platform</li>
+                        <li class="list-group-item">Silverlight v5 multi-window out-of-browser application for traders providing live market prices.</li>
+                        <li class="list-group-item">Written in C# and F#. Created new features within the application as well as maintaining it, refactoring and improving its architecture, stability and performance, plus troubleshooting and fixing issues.</li>
+                        <li class="list-group-item">Autofac, MEF, RX, TDD, Moq, AgUnit, Silverlight Unit Testing Framework, SpecFlow, interop to C++ COM and Win32 components.</li>
+                        <li class="list-group-item">Agile methodologies, pair programming, peer reviews. Provided technical support to team members.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      BNP Paribas
+                      <div class="pull-right">
+                        London
+                      </div>
+                    </div>
+                    <div class="description">
+                      The largest French banking group and the largest bank in the Eurozone
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;institutional.bnpparibas-am.com&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;institutional.bnpparibas-am.com&#x2F;</a>
+                    </div>
+                    <div class="year">August 2010 – December 2011</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Developer</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Developed enhanced WPF application framework including layouts, state persistence, magnetic windows, cross-process communication and eventing, common controls and styling and more</li>
+                        <li class="list-group-item">Live FX Trades blotter WPF windows application that displays live, filterable grids of FX trade data. TOC subscription service, communication using Protobuffers through RV layer, application used RX to throttle incoming data.</li>
+                        <li class="list-group-item">Live FX Position monitor WPF app that displays live FX positions on animated bar charts. Data can be drilled into to display different cuts e.g. by currency pair, client sector, region etc. Windows service uses continuous queries onto Coherence database and MDX queries into OLAP Cube.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
+              
+              <div class="title only  pull-right">Marlborough, Wiltshire UK</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">+44 (0)7946 233 130</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:lee.oades@gmail.com" target="_blank">lee.oades@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
+              <div class="title pull-right">linkedin</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;leeoades&#x2F;" target="_blank">leeoades</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
+              <div class="title pull-right">github</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;leeoades" target="_blank">leeoades</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-stack-overflow fa-fw"></span></div>
+              <div class="title pull-right">stackoverflow</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;20508&#x2F;lee-oades" target="_blank">lee-oades</a></div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fas fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">1993 1996</div>
+                <div class="description pull-right">
+                  <h3>The University of Southampton</h3>
+                  <div class="where"></div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;www.southampton.ac.uk&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.southampton.ac.uk&#x2F;</a>
+                  </div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Bachelor of Science</p>
+                  <p>Mathematics with Computer Science</p>
+                  <p>
+                    Grade: 1st class with honours
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Backend
+                  <span class="skill-level">Advanced</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">C# v8</span>
+                <span class= "skill badge">ASP.NET Core 3.1</span>
+                <span class= "skill badge">Entity Framework to SQL Server</span>
+                <span class= "skill badge">RESTful APIs</span>
+                <span class= "skill badge">Swagger</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Cloud
+                  <span class="skill-level">Advanced</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">AWS</span>
+                <span class= "skill badge">Lambda</span>
+                <span class= "skill badge">Step Functions</span>
+                <span class= "skill badge">SNS</span>
+                <span class= "skill badge">SQS</span>
+                <span class= "skill badge">DynamoDB</span>
+                <span class= "skill badge">API Gateway</span>
+                <span class= "skill badge">EC2</span>
+                <span class= "skill badge">S3</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Dev Ops
+                  <span class="skill-level">Advanced</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Team City / Jenkins</span>
+                <span class= "skill badge">ELK / Kibana</span>
+                <span class= "skill badge">Octopus</span>
+                <span class= "skill badge">GIT</span>
+                <span class= "skill badge">Nuget</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Frontend
+                  <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">ASP.NET MVC / Razor</span>
+                <span class= "skill badge">HTML</span>
+                <span class= "skill badge">CSS / SASS / LESS / SCSS</span>
+                <span class= "skill badge">Javascript / Typescript</span>
+                <span class= "skill badge">Knockout JS</span>
+                <span class= "skill badge">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fas fa-heart ico"></i> Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Watching films
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Playing acoustic guitar
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  All things electric cars
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Playing poker, preferably winning.
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Playing football
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h2><i class= "fas fa-check-square ico"></i> References</h2>
+            <blockquote>
+              <div><p>I've had the pleasure of working with Lee on a couple of occasions in the past decade, both long term consultant hires, and cannot recommend highly enough his skills and the way that he delivers them into teams and projects.</p><p>When you hire Lee you're hiring much more than a professional, experienced, trusted and battle-hardened software developer.</p><p>As well as the high quality outputs that you'd expect from a consultant developer like Lee, he also adds his abilities to generate, foster and maintain high levels of enthusiasm and collaboration in any team that he joins.</p><p><em>(extract from LinkedIn)</em></p></div>
+              <footer>
+                <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;dale-titcombe-mbcs-citp-bbaab098&#x2F;" target= "_blank">Dale Titcombe, Head of IT, BCS, The Charter Institute for IT</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div><p>I have worked with Lee for many years, crossing several contracts / projects and I cannot rate him highly enough.</p><p>Lee has been instrumental in revolutionising our ways of working and has never let me down when it comes to delivering quality product. He's also completely autonomous and finds ways of filling gaps even between tasks.</p><em>(extract from LinkedIn)</em></p></div>
+              <footer>
+                <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;ken-maes-7511a011&#x2F;" target= "_blank">Ken Maes, Application Development Manager, BCS, The Charter Institute for IT</a>
+              </footer>
+            </blockquote><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
