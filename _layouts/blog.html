@@ -8,16 +8,13 @@ layout: default
                   <div class="row">
                       {% for post in paginator.posts %}
                       <div class="card blog-post">
-                          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}{{ post.thumbnail }}" alt="{{ post.title }}">
+                        <a href="{{ post.url | prepend: site.baseurl }}"><img class="card-img-top" src="{{site.url}}{{site.baseurl}}{{ post.thumbnail }}" alt="{{ post.title }}"></a>
                           <div class="card-body center">
                               <!-- <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="author-profile-img"> -->
-                              <h4 class="card-title">{{ post.title }}</h4>
+                              <h4 class="card-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
 
                               <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6>
                               <p class="card-text">{{ post.summary }} </p>
-
-                              <a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" class="btn btn-dark btn-lg">Read</a>
-                              <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></span>
 
                           </div>
                       </div>
@@ -59,7 +56,7 @@ layout: default
       </div>
 
     </div>
-    {%- include blog_sidebar.html -%}
+    
 
  </div>
 
