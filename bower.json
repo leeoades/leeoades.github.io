@@ -1,15 +1,13 @@
 {
-  "name": "devlopr-jekyll",
-  "homepage": "https://github.com/sujaykundu777/devlopr-jekyll",
+  "name": "Lee Oades",
+  "homepage": "https://github.com/leeoades/leeoades.github.io",
   "authors": [
-    "sujaykundu777 <sujaykundu777@gmail.com>"
+    "Lee Oades <lee.oades@gmail.com>"
   ],
-  "description": "A Jekyll Theme Built For Developers",
+  "description": "Lee Oades : Professional Software Developer",
   "main": "",
   "keywords": [
-    "jekyll-theme",
-    "jekyll",
-    "gallery"
+    
   ],
   "license": "MIT",
   "ignore": [
