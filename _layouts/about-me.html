@@ -83,11 +83,11 @@ layout: default
       </p>
 
       {% if site.author_location %}
-      <h6><i class="fas fa-map-marker-alt"></i> {{ site.author_location }}</h6>
+      <h6><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/?api=1&query={{ site.author_location }}" target="_blank">{{ site.author_location }}</a></h6>
       {% endif %} {% if site.author_email %}
-      <h6><i class="fas fa-envelope"></i> {{ site.author_email }}</h6>
+      <h6><i class="fas fa-envelope"></i> <a href="mailto:{{ site.author_email }}">{{ site.author_email }}</a></h6>
       {% endif %} {% if site.author_website_url %}
-      <h6><i class="fas fa-link"></i> {{ site.author_website_url }}</h6>
+      <h6><i class="fas fa-link"></i> <a href="{{ site.author_website_url }}" target="_blank">{{ site.author_website_url }}</a></h6>
       {% endif %}
     </div>
 
