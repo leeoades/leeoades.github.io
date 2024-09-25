@@ -1,5 +1,5 @@
 title: Lee Oades
-subtitle: Software Developer
+subtitle: Senior Software Developer
 description: >- # this means to ignore newlines until "baseurl:"
   Hello :-)
 
@@ -9,16 +9,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: About Me
       url: /about
-    - text: Contact Me
-      url : /contact
     
 # Edit these details
 
-author_logo: myAvatar.svg
+author_logo: https://avatars2.githubusercontent.com/u/2321091?s=800
 author: Lee Oades
 author_bio: Professional software developer
 author_email: "lee.oades@gmail.com"
-author_location: Marlborough, Wiltshire UK
+author_location: Amesbury, Wiltshire UK
 author_website_url: "https://leeoades.github.io"
 typewrite-text: Greetings friends
 
