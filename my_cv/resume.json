@@ -3,14 +3,14 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Lee Oades",
-    "label": "Software Consultancy and Development // Lee Oades Consulting Ltd",
+    "label": "Software Developer and Consultant // Lee Oades Consulting Ltd",
     "image": "https://avatars2.githubusercontent.com/u/2321091?s=800",    
     "email": "lee.oades@gmail.com",
     "phone":"+44 (0)7946 233 130",
     "url": "https://leeoades.github.io/",
     "summary": "<p>Versatile, experienced developer and problem solver. Reliable, self-motivated, professional and positive can-do attitude, friendly bloke.</p><p>Contracting since 2008, previous clients range from large financial corporations, to the games industry, charities and start-ups.</p><p>Embracing the latest technologies and serverless architectures. Continuously learning and improving.</p><p>Passionate about producing beautiful, well-tested, maintainable software, using best practices, industry standard design patterns and practices, improving user experiences, eliminating manual processes and improving staff efficiency, using an Agile and iterative approach.</p><p>Strong team player, providing technical leadership, guidance and mentoring to colleagues. </p><p>Excellent client facing and communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with creative and systematic approach and excellent problem-solving abilities. </p>",
     "location": {
-      "city": "Marlborough",
+      "city": "Amesbury",
       "region":"Wiltshire",
       "countryCode": "UK"
     },
@@ -37,10 +37,10 @@
       "institution": "The University of Southampton",
       "url":"https://www.southampton.ac.uk/",
       "area": "Mathematics with Computer Science",
-      "studyType": "Bachelor of Science",
-      "score": "1st class with honours",
+      "studyType": "Bachelor of Science with Honours",
       "startDate": "1993-09-01",
-      "endDate": "1996-07-01"
+      "endDate": "1996-07-01",
+      "score":"1st Class Honours Degree"
     }
   ],
   "references": [
@@ -57,34 +57,52 @@
   ],
   "skills": [
     {
-      "keywords": ["C# v8", "ASP.NET Core 3.1", "Entity Framework to SQL Server", "RESTful APIs", "Swagger"],
+      "keywords": ["C# v12", ".Net v8", "Multithreading / async await", "MicroServices", "ASP.Net APIs", "TDD / Unit Testing in XUnit", "Functional style", "Best practices"],
       "level": "Advanced",
-      "name": "Backend"
+      "name": "Coding"
     },
     {
-      "keywords": ["AWS", "Lambda", "Step Functions", "SNS", "SQS", "DynamoDB", "API Gateway", "EC2", "S3"],
+      "keywords": ["AWS", "Lambda", "Step Functions", "SNS", "SQS", "DynamoDB", "API Gateway", "EC2", "S3", "MySql"],
       "level": "Advanced",
       "name": "Cloud"
     },
     {
-      "keywords": ["Team City / Jenkins", "ELK / Kibana", "Octopus", "GIT", "Nuget"],
+      "keywords": ["Jira", "Team City / Jenkins", "ELK / Kibana / DataDog", "Octopus Deploy / Terraform", "GIT"],
       "level": "Advanced",
-      "name": "Dev Ops"
-    },
-    {
-      "keywords": [
-        "ASP.NET MVC / Razor",
-        "HTML",
-        "CSS / SASS / LESS / SCSS",
-        "Javascript / Typescript",
-        "Knockout JS",
-        "Bootstrap"
-      ],
-      "level": "Intermediate",
-      "name": "Frontend"
+      "name": "Tools"
     }
   ],
   "work": [
+    {
+      "name": "Starlizard",
+      "description":"Leading sports analysis and betting platform provider.",
+      "url": "https://starlizard.com/",
+      "location": "London + remote",
+      "position": "Backend Cloud Developer",
+      "startDate": "2022-07-04",
+      "endDate": "2024-12-01",
+      "highlights": [
+        "Developed features for a complex, asynchronous, low latency, event sourced / event driven betting platform.",
+        "Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.",
+        "Actor architecture using Microsoft Orleans. Subscriptions to Kafka streams. gRPC streams and Swagger end points.",
+        "Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, MySql, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services"
+      ]
+    },
+    {
+      "name": "eCommonSense (Merchant Systems Group Limited) / ECI Software Solutions",
+      "description":"ECommerce solution for the builders merchant industry. eCommonSense aquired by ECI Software Solutions in Oct 2021",
+      "url": "https://new.ecommonsense.com/",
+      "location": "remote",
+      "position": "Lead Integration Platform Developer",
+      "startDate": "2020-11-02",
+      "endDate": "2022-06-30",
+      "highlights": [
+        "Built a common mechanism between our front end Magento system and various Builders Merchant ERP systems.",
+        "Thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.",
+        "Event driven architecture within AWS - API Gateways, SNS, SQS, Lambdas, MySql",
+        "Architecture declared through Terraform."
+      ]
+    },
     {
       "name": "BCS",
       "description":"The Chartered Institute for IT",
@@ -132,7 +150,7 @@
     },
     {
       "name": "Royal Bank of Canada - Capital Markets",
-      "description":"",
+      "description":"Global investment bank",
       "url": "https://www.rbc.com/",
       "location": "London",
       "position": "Analyst Developer",
@@ -147,7 +165,7 @@
     },
     {
       "name": "Royal Bank of Scotland",
-      "description":"",
+      "description":"Major retail and commercial bank",
       "url": "https://rbs.co.uk",
       "location": "London",
       "position": "WPF Developer",
@@ -162,7 +180,7 @@
     },
     {
       "name": "Trayport",
-      "description":"Trayport is the main platform that connects traders, brokers and utilities to the energy market's electronic trading and clearing systems",
+      "description":"Provides energy trading solutions for traders, brokers, and exchanges worldwide.",
       "url": "https://www.trayport.com/",
       "location": "London",
       "position": "Silverlight Developer",
@@ -193,19 +211,22 @@
   ],
   "interests": [
     {
-      "name": "Watching films"
+      "name": "photography, retro tech, pixel art"
     },
     {
-      "name": "Playing acoustic guitar"
+      "name": "playing acoustic guitar badly"
     },
     {
-      "name": "All things electric cars"
+      "name": "poker, chess, board games, puzzles"
     },
     {
-      "name": "Playing poker, preferably winning."
+      "name": "playing football, supporting Chelsea Women"
     },
     {
-      "name": "Playing football"
+      "name": "watching films, preferably well written ones"
+    },
+    {
+      "name": "electric cars, solar, sustainability"
     }
   ]
 }
