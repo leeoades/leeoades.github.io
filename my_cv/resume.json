@@ -1,17 +1,19 @@
 {
-  "meta": { "theme": "kendall" },
+  "meta": {
+    "theme": "stackoverflow"
+  },
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Lee Oades",
-    "label": "Software Developer and Consultant // Lee Oades Consulting Ltd",
-    "image": "https://avatars2.githubusercontent.com/u/2321091?s=800",    
+    "label": "Senior Software Developer",
+    "image": "https://avatars2.githubusercontent.com/u/2321091?s=800",
     "email": "lee.oades@gmail.com",
-    "phone":"+44 (0)7946 233 130",
+    "phone": "+44 (0)7946 233 130",
     "url": "https://leeoades.github.io/",
-    "summary": "<p>Versatile, experienced developer and problem solver. Reliable, self-motivated, professional and positive can-do attitude, friendly bloke.</p><p>Contracting since 2008, previous clients range from large financial corporations to the games industry, charities and start-ups.</p><p>Passionate about producing beautiful, well-tested, maintainable software, using best practices and industry standard design patterns, using an Agile and iterative approach.</p><p>Strong team player. Excellent business and client facing communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with systematic problem-solving abilities.</p>",
+    "summary": "Professional software developer with extensive experience. Reliable, self-motivated, positive can-do attitude, team player and friendly chap.\nContracting since 2008, clients range from large financial corporations to the games industry, charities and start-ups.\nPassionate about producing beautiful, well-tested, maintainable code, adhering to best practices and industry standard design patterns, using an Agile and iterative approach.\nExcellent business and client facing communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with systematic problem-solving abilities.\n",
     "location": {
       "city": "Amesbury",
-      "region":"Wiltshire",
+      "region": "Wiltshire",
       "countryCode": "UK"
     },
     "profiles": [
@@ -19,93 +21,117 @@
         "url": "https://www.linkedin.com/in/leeoades/",
         "username": "leeoades",
         "network": "linkedin"
-      },
-      {
-        "url": "https://github.com/leeoades",
-        "username": "leeoades",
-        "network": "github"
-      },
-      {
-        "url": "https://stackoverflow.com/users/20508/lee-oades",
-        "username": "lee-oades",
-        "network": "stackoverflow"
       }
     ]
   },
   "education": [
     {
       "institution": "The University of Southampton",
-      "url":"https://www.southampton.ac.uk/",
+      "url": "https://www.southampton.ac.uk/",
       "area": "Mathematics with Computer Science",
       "studyType": "Bachelor of Science with Honours",
       "startDate": "1993-09-01",
       "endDate": "1996-07-01",
-      "score":"1st Class Honours Degree"
+      "score": "1st Class Honours Degree"
     }
   ],
   "references": [
     {
-      "reference": "<p>I've had the pleasure of working with Lee on a couple of occasions in the past decade, both long term consultant hires, and cannot recommend highly enough his skills and the way that he delivers them into teams and projects.</p><p>When you hire Lee you're hiring much more than a professional, experienced, trusted and battle-hardened software developer.</p><p>As well as the high quality outputs that you'd expect from a consultant developer like Lee, he also adds his abilities to generate, foster and maintain high levels of enthusiasm and collaboration in any team that he joins.</p><p><em>(extract from LinkedIn)</em></p>",
+      "reference": "I've had the pleasure of working with Lee on a couple of occasions in the past decade, both long term consultant hires, and cannot recommend highly enough his skills and the way that he delivers them into teams and projects.\nWhen you hire Lee you're hiring much more than a professional, experienced, trusted and battle-hardened software developer.\nAs well as the high quality outputs that you'd expect from a consultant developer like Lee, he also adds his abilities to generate, foster and maintain high levels of enthusiasm and collaboration in any team that he joins.\n",
       "name": "Dale Titcombe, Head of IT, BCS, The Charter Institute for IT",
-      "url":"https://www.linkedin.com/in/dale-titcombe-mbcs-citp-bbaab098/"
+      "url": "https://www.linkedin.com/in/dale-titcombe-mbcs-citp-bbaab098/"
     },
     {
-      "reference": "<p>I have worked with Lee for many years, crossing several contracts / projects and I cannot rate him highly enough.</p><p>Lee has been instrumental in revolutionising our ways of working and has never let me down when it comes to delivering quality product. He's also completely autonomous and finds ways of filling gaps even between tasks.</p><em>(extract from LinkedIn)</em></p>",
+      "reference": "I have worked with Lee for many years, crossing several contracts / projects and I cannot rate him highly enough.\nLee has been instrumental in revolutionising our ways of working and has never let me down when it comes to delivering quality product. He's also completely autonomous and finds ways of filling gaps even between tasks.\n",
       "name": "Ken Maes, Application Development Manager, BCS, The Charter Institute for IT",
-      "url":"https://www.linkedin.com/in/ken-maes-7511a011/"
+      "url": "https://www.linkedin.com/in/ken-maes-7511a011/"
     }
   ],
   "skills": [
     {
-      "keywords": ["C# v12", ".Net v8", "Multithreading / async await", "MicroServices", "ASP.Net APIs", "TDD / Unit Testing in XUnit", "Functional style", "Best practices"],
-      "level": "Advanced",
+      "keywords": [
+        "C# v12",
+        ".Net 8",
+        "Multithreading",
+        "ASP.Net Core APIs",
+        "TDD / Unit Testing in XUnit",
+        "Moq / FakeItEasy",
+        "BDD Specflow",
+        "DI",
+        "SOLID"
+      ],
+      "level": "Master",
       "name": "Coding"
     },
     {
-      "keywords": ["AWS", "Lambda", "Step Functions", "SNS", "SQS", "DynamoDB", "API Gateway", "EC2", "S3", "MySql"],
+      "keywords": [
+        "WPF",
+        "Kafka",
+        "Microsoft Orleans",
+        "gRPC",
+        "RX",
+        "SQL",
+        "Terraform",
+        "GIT",
+        "Docker Containers",
+        "Jira",
+        "Team City / Octopus",
+        "Kibana / DataDog"
+      ],
       "level": "Advanced",
-      "name": "Cloud"
+      "name": "Tech + Tools"
     },
     {
-      "keywords": ["Jira", "Team City / Jenkins", "ELK / Kibana / DataDog", "Octopus Deploy / Terraform", "GIT"],
+      "keywords": [
+        "Lambda",
+        "Step Functions",
+        "SNS",
+        "SQS",
+        "DynamoDB",
+        "API Gateway",
+        "EC2",
+        "S3",
+        "MySql",
+        "FTP",
+        "CloudWatch"
+      ],
       "level": "Advanced",
-      "name": "Tools"
+      "name": "AWS"
     }
   ],
   "work": [
     {
       "name": "Starlizard",
-      "description":"Leading sports analysis and betting platform provider.",
+      "description": "Leading sports analysis and betting platform provider.",
       "url": "https://starlizard.com/",
       "location": "London + remote",
       "position": "Backend Cloud Developer",
       "startDate": "2022-07-04",
       "endDate": "2024-12-01",
       "highlights": [
-        "Developed features for a complex, asynchronous, low latency, event sourced / event driven betting platform.",
-        "Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.",
-        "Actor architecture using Microsoft Orleans. Subscriptions to Kafka streams. gRPC streams and Swagger end points.",
+        "Developed features for a complex, asynchronous, low latency, event sourced / event driven betting platform. Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.",
+        "Actor architecture using Microsoft Orleans. Subscriptions to Kafka streams. gRPC streams and Swagger end points. Persistence to MySql and DynamoDB. High test coverage using XUnit and Specflow tests.",
         "Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, MySql, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services"
       ]
     },
     {
       "name": "eCommonSense (Merchant Systems Group Limited) / ECI Software Solutions",
-      "description":"ECommerce solution for the builders merchant industry. eCommonSense aquired by ECI Software Solutions in Oct 2021",
-      "url": "https://new.ecommonsense.com/",
+      "description": "ECommerce solution for the builders merchant industry. eCommonSense aquired by ECI Software Solutions in Oct 2021",
+      "url": "https://www.ecommonsense.com/",
       "location": "remote",
       "position": "Lead Integration Platform Developer",
       "startDate": "2020-11-02",
       "endDate": "2022-06-30",
       "highlights": [
-        "Built a common mechanism between our front end Magento system and various Builders Merchant ERP systems.",
+        "Built a middleware layer between our front end Magento system and numerous Builders Merchant ERP systems.",
         "Thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.",
         "Event driven architecture within AWS - API Gateways, SNS, SQS, Lambdas, MySql",
-        "Architecture declared through Terraform."
+        "Architecture declared and deployed through Terraform."
       ]
     },
     {
       "name": "BCS",
-      "description":"The Chartered Institute for IT",
+      "description": "The Chartered Institute for IT",
       "url": "https://www.bcs.org/",
       "location": "Swindon",
       "position": "Senior Software Developer",
@@ -120,7 +146,7 @@
     },
     {
       "name": "Nationwide",
-      "description":"The world's largest building society",
+      "description": "The world's largest building society",
       "url": "https://www.nationwide.co.uk/",
       "location": "Swindon",
       "position": "Senior Software Developer",
@@ -135,7 +161,7 @@
     },
     {
       "name": "BCS",
-      "description":"The Chartered Institute for IT",
+      "description": "The Chartered Institute for IT",
       "url": "https://www.bcs.org/",
       "location": "Swindon",
       "position": "Senior Software Developer",
@@ -150,7 +176,7 @@
     },
     {
       "name": "Royal Bank of Canada - Capital Markets",
-      "description":"Global investment bank",
+      "description": "Global investment bank",
       "url": "https://www.rbc.com/",
       "location": "London",
       "position": "Analyst Developer",
@@ -165,7 +191,7 @@
     },
     {
       "name": "Royal Bank of Scotland",
-      "description":"Major retail and commercial bank",
+      "description": "Major retail and commercial bank",
       "url": "https://rbs.co.uk",
       "location": "London",
       "position": "WPF Developer",
@@ -180,7 +206,7 @@
     },
     {
       "name": "Trayport",
-      "description":"Provides energy trading solutions for traders, brokers, and exchanges worldwide.",
+      "description": "Provides energy trading solutions for traders, brokers, and exchanges worldwide.",
       "url": "https://www.trayport.com/",
       "location": "London",
       "position": "Silverlight Developer",
@@ -196,8 +222,8 @@
     },
     {
       "name": "BNP Paribas",
-      "description":"The largest French banking group and the largest bank in the Eurozone",
-      "url": "https://institutional.bnpparibas-am.com/",
+      "description": "The largest French banking group and the largest bank in the Eurozone",
+      "url": "https://group.bnpparibas/en/",
       "location": "London",
       "position": "Senior Developer",
       "startDate": "2010-08-01",
@@ -211,22 +237,19 @@
   ],
   "interests": [
     {
-      "name": "photography, retro tech, pixel art"
+      "name": "photography"
     },
     {
-      "name": "playing acoustic guitar badly"
+      "name": "retro tech, pixel art"
     },
     {
-      "name": "poker, chess, board games, puzzles"
+      "name": "acoustic guitar"
     },
     {
-      "name": "playing football, supporting Chelsea Women"
+      "name": "poker, chess, board games"
     },
     {
-      "name": "watching films, preferably well written ones"
-    },
-    {
-      "name": "electric cars, solar, sustainability"
+      "name": "playing football"
     }
   ]
 }
