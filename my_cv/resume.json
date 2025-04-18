@@ -21,6 +21,11 @@
         "url": "https://www.linkedin.com/in/leeoades/",
         "username": "leeoades",
         "network": "linkedin"
+      },
+      {
+        "url": "https://leeoades.github.io/",
+        "username": "leeoades.github.io",
+        "network": "github"
       }
     ]
   },
@@ -266,16 +271,19 @@
       "name": "photography"
     },
     {
-      "name": "8-bit text adventures, retro tech, pixel art"
+      "name": "8-bit text adventures"
     },
     {
       "name": "acoustic guitar"
     },
     {
-      "name": "poker, chess, board games"
+      "name": "poker, chess, games"
     },
     {
       "name": "playing football"
+    },
+    {
+      "name": "Chelsea Women FC"
     }
   ]
 }
