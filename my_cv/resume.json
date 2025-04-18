@@ -6,11 +6,11 @@
   "basics": {
     "name": "Lee Oades",
     "label": "Senior Software Developer",
-    "image": "https://avatars2.githubusercontent.com/u/2321091?s=800",
+    "image": "https://avatars2.githubusercontent.com/u/2321091",
     "email": "lee.oades@gmail.com",
     "phone": "+44 (0)7946 233 130",
     "url": "https://leeoades.github.io/",
-    "summary": "Professional software developer with extensive experience. Reliable, self-motivated, positive can-do attitude, team player and friendly chap.\nContracting since 2008, clients range from large financial corporations to the games industry, charities and start-ups.\nPassionate about producing beautiful, well-tested, maintainable code, adhering to best practices and industry standard design patterns, using an Agile and iterative approach.\nExcellent business and client facing communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with systematic problem-solving abilities.\n",
+    "summary": "Professional software developer with extensive experience. Reliable, self-motivated, positive can-do attitude, tech leader, mentor and friendly chap.\nClients have ranged from large financial corporations to the games industry, charities and start-ups.\nPassionate about crafting beautiful, well-tested, maintainable code, adhering to best practices and industry standard design patterns, using an Agile and iterative approach.\nExcellent business and client facing communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with systematic problem-solving abilities.\n",
     "location": {
       "city": "Amesbury",
       "region": "Wiltshire",
@@ -50,56 +50,81 @@
   "skills": [
     {
       "keywords": [
-        "C# v12",
-        ".Net 8",
+        "C#",
+        ".Net Core",
         "Multithreading",
+        "Low latency",
+        "Event driven architecture",
+        "Microservices",
+        "Actor model",
+        "CQRS",
+        "Event sourcing",
+        "LINQ",
+        "Asynchronous Programming",
+        "Dependency injection",
         "ASP.Net Core APIs",
-        "TDD / Unit Testing in XUnit",
-        "Moq / FakeItEasy",
-        "BDD Specflow",
-        "DI",
-        "SOLID"
+        "TDD",
+        "Unit Testing"
       ],
       "level": "Master",
       "name": "Coding"
     },
     {
       "keywords": [
-        "WPF",
         "Kafka",
         "Microsoft Orleans",
         "gRPC",
+        "WPF",
         "RX",
+        "BDD Specflow",
         "SQL",
+        "NoSQL",
         "Terraform",
         "GIT",
-        "Docker Containers",
-        "Jira",
-        "Team City / Octopus",
-        "Kibana / DataDog"
+        "Docker Containers"
       ],
       "level": "Advanced",
       "name": "Tech + Tools"
     },
     {
       "keywords": [
-        "Lambda",
-        "Step Functions",
-        "SNS",
-        "SQS",
+        "AWS Lambdas",
+        "AWS Step Functions",
+        "AWS SNS",
+        "AWS SQS",
         "DynamoDB",
-        "API Gateway",
-        "EC2",
-        "S3",
+        "AWS API Gateway",
+        "AWS EC2",
+        "AWS S3",
         "MySql",
-        "FTP",
-        "CloudWatch"
+        "AWS CloudWatch",
+        "Azure Function Apps",
+        "Azure Event Grid",
+        "Azure Queues",
+        "Azure Blob Storage",
+        "Azure AI Search",
+        "Azure Application Insights"
       ],
       "level": "Advanced",
-      "name": "AWS"
+      "name": "Cloud Services"
     }
   ],
   "work": [
+    {
+      "name": "Department for Education / Hive IT",
+      "description": "Making UK education statistics more accessible and useful for all.",
+      "url": "https://explore-education-statistics.service.gov.uk/",
+      "location": "Sheffield + remote",
+      "position": "Senior Developer, Technical Consultant, Trainer and Mentor",
+      "startDate": "2025-01-06",
+      "endDate": "2025-06-30",
+      "highlights": [
+        "Developed a new enhanced search capability for their system, introducing an event-driven mechanism to provide the new functionality without further coupling.",
+        "Hosted in Azure utilising Function apps, Azure AI Search, Event Grid, Storage Queues, Blob Storage, Application Insights.",
+        "Provided technical leadership, training and mentoring to the team on software practices, design improvements and unit testing.",
+        "To view examples of my work, this project is open source: https://github.com/dfe-analytical-services/explore-education-statistics/"
+      ]
+    },
     {
       "name": "Starlizard",
       "description": "Leading sports analysis and betting platform provider.",
@@ -109,7 +134,7 @@
       "startDate": "2022-07-04",
       "endDate": "2024-12-01",
       "highlights": [
-        "Developed features for a complex, asynchronous, low latency, event sourced / event driven betting platform. Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.",
+        "Developed countless features for a complex, asynchronous, low latency, event sourced / event driven betting platform. Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.",
         "Actor architecture using Microsoft Orleans. Subscriptions to Kafka streams. gRPC streams and Swagger end points. Persistence to MySql and DynamoDB. High test coverage using XUnit and Specflow tests.",
         "Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, MySql, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services"
       ]
@@ -123,10 +148,10 @@
       "startDate": "2020-11-02",
       "endDate": "2022-06-30",
       "highlights": [
-        "Built a middleware layer between our front end Magento system and numerous Builders Merchant ERP systems.",
-        "Thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.",
+        "Designed and built the middleware layer to interface the data, actions and events between the front end Magento system and numerous custom Builders Merchant ERP (Enterprise Resource Planning) systems.",
+        "Beautiful thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.",
         "Event driven architecture within AWS - API Gateways, SNS, SQS, Lambdas, MySql",
-        "Architecture declared and deployed through Terraform."
+        "Declared the infrastructure and deployed it using Terraform."
       ]
     },
     {
@@ -240,7 +265,7 @@
       "name": "photography"
     },
     {
-      "name": "retro tech, pixel art"
+      "name": "8-bit text adventures, retro tech, pixel art"
     },
     {
       "name": "acoustic guitar"

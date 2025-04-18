@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Lee Oades</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <style>
   /********************************************
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
@@ -190,10 +189,6 @@ em {
   color: #757575;
 }
 
-blockquote {
-  margin-bottom: 1em;
-}
-
 strong {
   font-weight: 700;
 }
@@ -266,10 +261,13 @@ section .location {
   border-radius: 4px;
 }
 
+.section.summary header {
+  margin-top: 1rem;
+}
+
 .main-summary {
   background: #f1f8ff;
   padding: 1.2em 1em;
-  margin-top: 1rem;
 }
 
 .main-summary p {
@@ -569,6 +567,7 @@ section .location {
 
 #references .item {
   padding-left: 0.5em;
+  margin-bottom: 1em;
   border-left: 5px solid #ff6d1f;
 }
 
@@ -652,6 +651,12 @@ section .location {
   #profiles a:not(.hide-href-print)::after{
     content: " (" attr(href) ") ";
   }
+  #profiles .url .show-only-url-print {
+    display: none;
+  }
+  #profiles .url a::after {
+    content: attr(href);
+  }
   #resume {
     margin: 0.1em;
     padding: 0.1em;
@@ -664,6 +669,9 @@ section .location {
   }
   .item-count {
     display: none;
+  }
+  .company a {
+    color: #40484f;
   }
   .company::before,
   .institution::before,
@@ -686,7 +694,8 @@ section .location {
     padding-bottom: 0.15rem;
   }
   .section > section > section {
-    margin: 0 0 1em 0;
+    border-bottom: 1px solid #fdfdfd;
+    margin: .5em 0;
   }
   .section > section > section:last-of-type {
     margin: 0;
@@ -714,7 +723,7 @@ section .location {
   ul.keywords li::after,
   ul.courses li::after {
     padding: 0 0 0 0.1rem;
-    content: " |";
+    content: ", ";
   }
   ul.keywords::before,
   ul.courses::before {
@@ -722,14 +731,28 @@ section .location {
     font-weight: 600;
   }
   #skills .item {
-    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem 0;
     padding: 0;
+  }
+  #skills .level {
+    margin: 0.1rem 0;
+    font-weight: 400;
+  }
+  #skills .keywords {
+    font-size: 0.9rem;
+    margin: 0;
   }
   .highlights {
     margin: 0.5em 0 0 0;
   }
+  .highlights > li > p {
+    margin-bottom: 0.3em;
+  }
   ul.keywords::before {
-    content: "Skills acquired: ";
+    content: "Skills: ";
+    font-size: 1rem;
   }
   #skills .keywords::before {
     content: none;
@@ -740,6 +763,12 @@ section .location {
   }
   ul.courses::before {
     content: "Major courses: ";
+    font-size: 1rem;
+  }
+  ul.keywords li,
+  ul.courses li {
+    font-size: 1rem;
+    line-height: inherit;
   }
   ul.keywords li:last-of-type::after,
   ul.courses li:last-of-type::after {
@@ -759,7 +788,7 @@ section .location {
     display: block;
     opacity: 1 !important;
   }
-  .fa-map-marker-alt:before {
+  .fa-location-dot:before {
     padding-left: 0.1em;
   }
 }
@@ -771,7 +800,7 @@ section .location {
   
   <div id="resume">
     	<header id="header" class="clear">
-    		<img class="image" src="https://avatars2.githubusercontent.com/u/2321091?s&#x3D;800" alt="Lee Oades" />
+    		<img class="image" src="https://avatars2.githubusercontent.com/u/2321091" alt="Lee Oades" />
     		<div class="middle">
     			<h1 class="name">Lee Oades</h1>
     			<h2 class="label">Senior Software Developer</h2>
@@ -780,17 +809,17 @@ section .location {
     		<span class="location">
     			<span class="city">Amesbury,</span>
     			<span class="region">Wiltshire</span>
-    			<span class="countryCode">UK</span>
+    			<span class="countryCode">(UK)</span>
     		</span>
     
     
     		<div id="contact">
     			<div class="email">
-    				<span class="far fa-envelope"></span>
+    				<span class="fa-regular fa-envelope"></span>
     				<a class="hide-href-print" href="mailto:lee.oades@gmail.com">lee.oades@gmail.com</a>
     			</div>
     			<div class="phone">
-    				<span class="fas fa-mobile-alt"></span>
+    				<span class="fa-solid fa-mobile-screen-button"></span>
     				<a class="hide-href-print" href="tel:+44 (0)7946 233 130">+44 (0)7946 233 130</a>
     			</div>
     		</div>
@@ -798,122 +827,160 @@ section .location {
     		<div id="profiles">
     			<div class="item">
     				<div class="username">
-    					<span class="fab fa-linkedin linkedin social"></span>
+    					<span class="fa-brands fa-linkedin linkedin social"></span>
     					<span class="url">
-    						<a target="_blank" href="https://www.linkedin.com/in/leeoades/">leeoades</a>
+    						<a target="_blank" href="https://www.linkedin.com/in/leeoades/"><span class="show-only-url-print">leeoades</span></a>
     					</span>
     				</div>
     			</div>
     		</div>
     	</header>
     
-    	<section class="section">
+    	<section class="section summary">
+        <header>
+          <h2 class="section-title">summary</h2>
+        </header>
     		<section class="main-summary">
-    			<div><p><p>Professional software developer with extensive experience. Reliable, self-motivated, positive can-do attitude, team player and friendly chap.</p><p>Contracting since 2008, clients range from large financial corporations to the games industry, charities and start-ups.</p><p>Passionate about producing beautiful, well-tested, maintainable code, adhering to best practices and industry standard design patterns, using an Agile and iterative approach.</p><p>Excellent business and client facing communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with systematic problem-solving abilities.</p></p></div>
+    			<div><p><p>Professional software developer with extensive experience. Reliable, self-motivated, positive can-do attitude, tech leader, mentor and friendly chap.</p><p>Clients have ranged from large financial corporations to the games industry, charities and start-ups.</p><p>Passionate about crafting beautiful, well-tested, maintainable code, adhering to best practices and industry standard design patterns, using an Agile and iterative approach.</p><p>Excellent business and client facing communication skills. Talented academic (1st Class Honours degree in Mathematics with Computer Science) with systematic problem-solving abilities.</p></p></div>
     		</section>
     	</section>
     
     <section class="section">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-    			<h3 class="name">
-    				Coding
-    			</h3>
-    			 
-    			<div class="level master">
-    				<em>Master</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>C# v12</li>
-    				<li>.Net 8</li>
-    				<li>Multithreading</li>
-    				<li>ASP.Net Core APIs</li>
-    				<li>TDD / Unit Testing in XUnit</li>
-    				<li>Moq / FakeItEasy</li>
-    				<li>BDD Specflow</li>
-    				<li>DI</li>
-    				<li>SOLID</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Tech + Tools
-    			</h3>
-    			 
-    			<div class="level advanced">
-    				<em>Advanced</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>WPF</li>
-    				<li>Kafka</li>
-    				<li>Microsoft Orleans</li>
-    				<li>gRPC</li>
-    				<li>RX</li>
-    				<li>SQL</li>
-    				<li>Terraform</li>
-    				<li>GIT</li>
-    				<li>Docker Containers</li>
-    				<li>Jira</li>
-    				<li>Team City / Octopus</li>
-    				<li>Kibana / DataDog</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				AWS
-    			</h3>
-    			 
-    			<div class="level advanced">
-    				<em>Advanced</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>Lambda</li>
-    				<li>Step Functions</li>
-    				<li>SNS</li>
-    				<li>SQS</li>
-    				<li>DynamoDB</li>
-    				<li>API Gateway</li>
-    				<li>EC2</li>
-    				<li>S3</li>
-    				<li>MySql</li>
-    				<li>FTP</li>
-    				<li>CloudWatch</li>
-    			</ul>
-    		</div>
-    	</section>
+      <header>
+        <h2 class='section-title'>Skills</h2>
+      </header>
+      <section id="skills">
+        <div class="item">
+          <h3 class="name">
+            Coding
+          </h3>
+            <div class="level master">
+                <em>Master</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>C#</li>
+            <li>.Net Core</li>
+            <li>Multithreading</li>
+            <li>Low latency</li>
+            <li>Event driven architecture</li>
+            <li>Microservices</li>
+            <li>Actor model</li>
+            <li>CQRS</li>
+            <li>Event sourcing</li>
+            <li>LINQ</li>
+            <li>Asynchronous Programming</li>
+            <li>Dependency injection</li>
+            <li>ASP.Net Core APIs</li>
+            <li>TDD</li>
+            <li>Unit Testing</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Tech + Tools
+          </h3>
+            <div class="level advanced">
+                <em>Advanced</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>Kafka</li>
+            <li>Microsoft Orleans</li>
+            <li>gRPC</li>
+            <li>WPF</li>
+            <li>RX</li>
+            <li>BDD Specflow</li>
+            <li>SQL</li>
+            <li>NoSQL</li>
+            <li>Terraform</li>
+            <li>GIT</li>
+            <li>Docker Containers</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Cloud Services
+          </h3>
+            <div class="level advanced">
+                <em>Advanced</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>AWS Lambdas</li>
+            <li>AWS Step Functions</li>
+            <li>AWS SNS</li>
+            <li>AWS SQS</li>
+            <li>DynamoDB</li>
+            <li>AWS API Gateway</li>
+            <li>AWS EC2</li>
+            <li>AWS S3</li>
+            <li>MySql</li>
+            <li>AWS CloudWatch</li>
+            <li>Azure Function Apps</li>
+            <li>Azure Event Grid</li>
+            <li>Azure Queues</li>
+            <li>Azure Blob Storage</li>
+            <li>Azure AI Search</li>
+            <li>Azure Application Insights</li>
+          </ul>
+        </div>
+      </section>
     </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(9)</span></h2>
+        <h2 class='section-title'>Work Experience <span class="item-count">(10)</span></h2>
       </header>
     
       <section id="work">
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jan 2025</span>
+                <span class="endDate">- Jun 2025</span>
+              </div>
+              <div class="position">Senior Developer, Technical Consultant, Trainer and Mentor</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Jul 2022</span>
-              <span class="endDate">- Dec 2024</span>
-            </div>
-            <div class="position">Backend Cloud Developer</div>
-            <div class="company">Starlizard</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">London + remote</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Sheffield + remote
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://explore-education-statistics.service.gov.uk/">https://explore-education-statistics.service.gov.uk/</a>
+          </span>        <div class="item" id="work-item">
+            <ul class="highlights">
+              <li><p><p>Developed a new enhanced search capability for their system, introducing an event-driven mechanism to provide the new functionality without further coupling.</p></p></li>
+              <li><p><p>Hosted in Azure utilising Function apps, Azure AI Search, Event Grid, Storage Queues, Blob Storage, Application Insights.</p></p></li>
+              <li><p><p>Provided technical leadership, training and mentoring to the team on software practices, design improvements and unit testing.</p></p></li>
+              <li><p><p>To view examples of my work, this project is open source: https://github.com/dfe-analytical-services/explore-education-statistics/</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jul 2022</span>
+                <span class="endDate">- Dec 2024</span>
+              </div>
+              <div class="position">Backend Cloud Developer</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            London + remote
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://starlizard.com/">https://starlizard.com/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
-              <li><p><p>Developed features for a complex, asynchronous, low latency, event sourced / event driven betting platform. Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.</p></p></li>
+              <li><p><p>Developed countless features for a complex, asynchronous, low latency, event sourced / event driven betting platform. Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.</p></p></li>
               <li><p><p>Actor architecture using Microsoft Orleans. Subscriptions to Kafka streams. gRPC streams and Swagger end points. Persistence to MySql and DynamoDB. High test coverage using XUnit and Specflow tests.</p></p></li>
               <li><p><p>Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, MySql, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services</p></p></li>
             </ul>
@@ -921,46 +988,48 @@ section .location {
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Nov 2020</span>
+                <span class="endDate">- Jun 2022</span>
+              </div>
+              <div class="position">Lead Integration Platform Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Nov 2020</span>
-              <span class="endDate">- Jun 2022</span>
-            </div>
-            <div class="position">Lead Integration Platform Developer</div>
-            <div class="company">eCommonSense (Merchant Systems Group Limited) / ECI Software Solutions</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">remote</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            remote
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.ecommonsense.com/">https://www.ecommonsense.com/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
-              <li><p><p>Built a middleware layer between our front end Magento system and numerous Builders Merchant ERP systems.</p></p></li>
-              <li><p><p>Thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.</p></p></li>
+              <li><p><p>Designed and built the middleware layer to interface the data, actions and events between the front end Magento system and numerous custom Builders Merchant ERP (Enterprise Resource Planning) systems.</p></p></li>
+              <li><p><p>Beautiful thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.</p></p></li>
               <li><p><p>Event driven architecture within AWS - API Gateways, SNS, SQS, Lambdas, MySql</p></p></li>
-              <li><p><p>Architecture declared and deployed through Terraform.</p></p></li>
+              <li><p><p>Declared the infrastructure and deployed it using Terraform.</p></p></li>
             </ul>
           </div>
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Sep 2019</span>
+                <span class="endDate">- Aug 2020</span>
+              </div>
+              <div class="position">Senior Software Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Sep 2019</span>
-              <span class="endDate">- Aug 2020</span>
-            </div>
-            <div class="position">Senior Software Developer</div>
-            <div class="company">BCS</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Swindon</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Swindon
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.bcs.org/">https://www.bcs.org/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
@@ -973,20 +1042,21 @@ section .location {
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Sep 2018</span>
+                <span class="endDate">- Aug 2019</span>
+              </div>
+              <div class="position">Senior Software Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Sep 2018</span>
-              <span class="endDate">- Aug 2019</span>
-            </div>
-            <div class="position">Senior Software Developer</div>
-            <div class="company">Nationwide</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Swindon</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Swindon
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.nationwide.co.uk/">https://www.nationwide.co.uk/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
@@ -999,20 +1069,21 @@ section .location {
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jun 2015</span>
+                <span class="endDate">- Aug 2018</span>
+              </div>
+              <div class="position">Senior Software Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Jun 2015</span>
-              <span class="endDate">- Aug 2018</span>
-            </div>
-            <div class="position">Senior Software Developer</div>
-            <div class="company">BCS</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Swindon</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Swindon
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.bcs.org/">https://www.bcs.org/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
@@ -1025,20 +1096,21 @@ section .location {
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jul 2013</span>
+                <span class="endDate">- Apr 2015</span>
+              </div>
+              <div class="position">Analyst Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Jul 2013</span>
-              <span class="endDate">- Apr 2015</span>
-            </div>
-            <div class="position">Analyst Developer</div>
-            <div class="company">Royal Bank of Canada - Capital Markets</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">London</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            London
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.rbc.com/">https://www.rbc.com/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
@@ -1051,20 +1123,21 @@ section .location {
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Sep 2012</span>
+                <span class="endDate">- Jul 2013</span>
+              </div>
+              <div class="position">WPF Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Sep 2012</span>
-              <span class="endDate">- Jul 2013</span>
-            </div>
-            <div class="position">WPF Developer</div>
-            <div class="company">Royal Bank of Scotland</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">London</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            London
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://rbs.co.uk">https://rbs.co.uk</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
@@ -1077,20 +1150,21 @@ section .location {
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jan 2012</span>
+                <span class="endDate">- Aug 2012</span>
+              </div>
+              <div class="position">Silverlight Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Jan 2012</span>
-              <span class="endDate">- Aug 2012</span>
-            </div>
-            <div class="position">Silverlight Developer</div>
-            <div class="company">Trayport</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">London</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            London
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.trayport.com/">https://www.trayport.com/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
@@ -1104,20 +1178,21 @@ section .location {
         </section>
         <section class="work-item">
     
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Aug 2010</span>
+                <span class="endDate">- Dec 2011</span>
+              </div>
+              <div class="position">Senior Developer</div>
+                <div class="company"></div>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Aug 2010</span>
-              <span class="endDate">- Dec 2011</span>
-            </div>
-            <div class="position">Senior Developer</div>
-            <div class="company">BNP Paribas</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">London</span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            London
+          </span>
           <span class="url">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://group.bnpparibas/en/">https://group.bnpparibas/en/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
@@ -1177,7 +1252,7 @@ section .location {
         </div>
         <div class="item">
           <h3 class="name">
-            retro tech, pixel art
+            8-bit text adventures, retro tech, pixel art
           </h3>
         </div>
         <div class="item">
