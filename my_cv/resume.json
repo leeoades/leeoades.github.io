@@ -125,8 +125,9 @@
       "endDate": "2025-06-30",
       "highlights": [
         "Developed a new enhanced search capability for the UK Government's Explore Education Statistics system.",
-        "Introduced an event-driven mechanism to provide the new functionality without further coupling.",
-        "Hosted in Azure utilising Function apps, Azure AI Search, Event Grid, Storage Queues, Blob Storage, Application Insights.",
+        "Introduced an event-driven mechanism (Event Grid events to Storage Queues) to provide the new functionality without further coupling.",
+        "I created multiple simple Azure Function apps to consume the events and generate, update or delete content blobs in Blob Storage for the search indexer to consume.",
+        "Introduced Serilog to provide structured logging into Application Insights.",
         "Provided technical leadership, training and mentoring to the Hive IT developers on software practices, design improvements and unit testing.",
         "To view examples of my work, this project is open source: https://github.com/dfe-analytical-services/explore-education-statistics/"
       ]
@@ -140,9 +141,14 @@
       "startDate": "2022-07-04",
       "endDate": "2024-12-01",
       "highlights": [
-        "Developed countless features for a complex, asynchronous, low latency, event sourced / event driven betting platform. Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.",
-        "Actor architecture using Microsoft Orleans. Subscriptions to Kafka streams. gRPC streams and Swagger end points. Persistence to MySql and DynamoDB. High test coverage using XUnit and Specflow tests.",
-        "Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, MySql, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services"
+        "Maintained and enhanced features in a complex, asynchronous, low latency, event sourced / event driven betting platform.",
+        "Built a football multi-game simulation component to emit game events (goals, cards, extra time, penalties) and betting events in a reasonably realistic manner. This is used for both load testing and simulation of rare events e.g. penalty shootouts.",
+        "Developed a new mechanism in the betting platform to handle how liabilty is grouped and aggregated for related markets to better coordinate the pricing to reduce opportunities for arbitrage.",
+        "Implemented several autonomous components to encapsulate behaviours and execute actions based on events, timers and the state of the system.",
+        "Made heavy use of Actor architecture using Microsoft Orleans that consumer Kafka streams. Communication with external components via gRPC streams and Swagger end points. Persistence to MySql or DynamoDB where appropriate.",
+        "High test coverage using XUnit and Specflow tests.",
+        "Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services",
+        "My use of the state machine `Stateless package within Orleans revealed a bug in the library which I reported and fixed. The fix was accepted and merged into the library."
       ]
     },
     {
@@ -156,7 +162,7 @@
       "highlights": [
         "Designed and built the middleware layer to interface the data, actions and events between the front end Magento system and numerous custom Builders Merchant ERP (Enterprise Resource Planning) systems.",
         "Beautiful thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.",
-        "Event driven architecture within AWS - API Gateways, SNS, SQS, Lambdas, MySql",
+        "Event driven architecture within AWS - API Gateway endpoints emit events into SNS, queued into SQS, and handled by single responsibility Lambdas. Persistence in MySql and/or DynamoDB.",
         "Declared the infrastructure and deployed it using Terraform."
       ]
     },
@@ -271,7 +277,7 @@
       "name": "photography"
     },
     {
-      "name": "8-bit text adventures"
+      "name": "8/16-bit text adventures"
     },
     {
       "name": "acoustic guitar"

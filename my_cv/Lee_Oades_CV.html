@@ -964,8 +964,9 @@ section .location {
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
               <li><p><p>Developed a new enhanced search capability for the UK Government's Explore Education Statistics system.</p></p></li>
-              <li><p><p>Introduced an event-driven mechanism to provide the new functionality without further coupling.</p></p></li>
-              <li><p><p>Hosted in Azure utilising Function apps, Azure AI Search, Event Grid, Storage Queues, Blob Storage, Application Insights.</p></p></li>
+              <li><p><p>Introduced an event-driven mechanism (Event Grid events to Storage Queues) to provide the new functionality without further coupling.</p></p></li>
+              <li><p><p>I created multiple simple Azure Function apps to consume the events and generate, update or delete content blobs in Blob Storage for the search indexer to consume.</p></p></li>
+              <li><p><p>Introduced Serilog to provide structured logging into Application Insights.</p></p></li>
               <li><p><p>Provided technical leadership, training and mentoring to the Hive IT developers on software practices, design improvements and unit testing.</p></p></li>
               <li><p><p>To view examples of my work, this project is open source: https://github.com/dfe-analytical-services/explore-education-statistics/</p></p></li>
             </ul>
@@ -993,9 +994,14 @@ section .location {
             <a target="_blank" href="https://starlizard.com/">https://starlizard.com/</a>
           </span>        <div class="item" id="work-item">
             <ul class="highlights">
-              <li><p><p>Developed countless features for a complex, asynchronous, low latency, event sourced / event driven betting platform. Handled bet execution, pricing, liability, market behaviour automation, sport event simulation, load testing.</p></p></li>
-              <li><p><p>Actor architecture using Microsoft Orleans. Subscriptions to Kafka streams. gRPC streams and Swagger end points. Persistence to MySql and DynamoDB. High test coverage using XUnit and Specflow tests.</p></p></li>
-              <li><p><p>Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, MySql, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services</p></p></li>
+              <li><p><p>Maintained and enhanced features in a complex, asynchronous, low latency, event sourced / event driven betting platform.</p></p></li>
+              <li><p><p>Built a football multi-game simulation component to emit game events (goals, cards, extra time, penalties) and betting events in a reasonably realistic manner. This is used for both load testing and simulation of rare events e.g. penalty shootouts.</p></p></li>
+              <li><p><p>Developed a new mechanism in the betting platform to handle how liabilty is grouped and aggregated for related markets to better coordinate the pricing to reduce opportunities for arbitrage.</p></p></li>
+              <li><p><p>Implemented several autonomous components to encapsulate behaviours and execute actions based on events, timers and the state of the system.</p></p></li>
+              <li><p><p>Made heavy use of Actor architecture using Microsoft Orleans that consumer Kafka streams. Communication with external components via gRPC streams and Swagger end points. Persistence to MySql or DynamoDB where appropriate.</p></p></li>
+              <li><p><p>High test coverage using XUnit and Specflow tests.</p></p></li>
+              <li><p><p>Utilised many technologies and tools: Docker, K3D, Tilt, Kubernetes, Kowl, RedPanda, OpenLens, Helm, Kibana, DataDog, plus many AWS services</p></p></li>
+              <li><p><p>My use of the state machine `Stateless package within Orleans revealed a bug in the library which I reported and fixed. The fix was accepted and merged into the library.</p></p></li>
             </ul>
           </div>
         </section>
@@ -1023,7 +1029,7 @@ section .location {
             <ul class="highlights">
               <li><p><p>Designed and built the middleware layer to interface the data, actions and events between the front end Magento system and numerous custom Builders Merchant ERP (Enterprise Resource Planning) systems.</p></p></li>
               <li><p><p>Beautiful thin vertical slice components to better isolate feature implementations. Use of Mediatr for clean code separation.</p></p></li>
-              <li><p><p>Event driven architecture within AWS - API Gateways, SNS, SQS, Lambdas, MySql</p></p></li>
+              <li><p><p>Event driven architecture within AWS - API Gateway endpoints emit events into SNS, queued into SQS, and handled by single responsibility Lambdas. Persistence in MySql and/or DynamoDB.</p></p></li>
               <li><p><p>Declared the infrastructure and deployed it using Terraform.</p></p></li>
             </ul>
           </div>
@@ -1281,7 +1287,7 @@ section .location {
         </div>
         <div class="item">
           <h3 class="name">
-            8-bit text adventures
+            8/16-bit text adventures
           </h3>
         </div>
         <div class="item">
