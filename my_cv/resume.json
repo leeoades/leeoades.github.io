@@ -116,6 +116,21 @@
   ],
   "work": [
     {
+      "name": "NextBase",
+      "description": "The world's best selling dash cam brand.",
+      "url": "https://nextbase.co.uk/",
+      "location": "Caerphilly, Wales + remote",
+      "position": "Senior Software Developer",
+      "startDate": "2025-07-28",
+      "endDate": "2026-01-30",
+      "highlights": [
+        "Developed enhanced parts of their AWS cloud infrastructure to enable a more separated and robust approach.",
+        "Created internal nuget libraries to encourage best practices and centralise common and boilerplate code.",
+        "Provided training and mentoring to the existing developers such as clean architecture and idiomatic c#.",
+        "Offered technical and architectural advice and experience with regards to future direction."
+      ]
+    },
+    {
       "name": "Department for Education via Hive IT",
       "description": "Making UK education statistics more accessible and useful for all.",
       "url": "https://explore-education-statistics.service.gov.uk/",
